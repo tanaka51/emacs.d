@@ -113,3 +113,9 @@
 (setq direx:leaf-icon "  "
       direx:open-icon "↓"
       direx:closed-icon "→")
+
+;; カラーテーマ
+(setq load-path (cons (expand-file-name "~/.emacs.d/elisp/color-theme") load-path))
+(require 'color-theme)
+(color-theme-initialize)
+(color-theme-simple-1)
