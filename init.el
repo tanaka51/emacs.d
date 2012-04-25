@@ -97,6 +97,7 @@
 ;; open-junk-file.el 247
 (require 'open-junk-file)
 (setq open-junk-file-format "~/junk/%Y/%m/%d/%H%M%S.")
+(setq open-junk-file-find-file-function 'find-file)
 (global-set-key (kbd "C-x j") 'open-junk-file)
 
 ;; popwin
