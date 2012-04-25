@@ -88,3 +88,8 @@
 (global-set-key (kbd "C-M-/") 'redo)
 (setq undo-limit 600000)
 (setq undo-strong-limit 900000)
+
+;; open-junk-file.el 247
+(require 'open-junk-file)
+(setq open-junk-file-format "~/junk/%Y/%m/%d/%H%M%S.")
+(global-set-key (kbd "C-x j") 'open-junk-file)
