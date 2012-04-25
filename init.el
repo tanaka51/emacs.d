@@ -1,8 +1,11 @@
 (setq user-full-name "Koichi Tanaka")
 
-
+;;;;;;;;;;;;;;;;;;;;;;
+;;
 ;; 環境毎の設定
+;;
 (load "~/.emacs.d/environments/init.el")
+
 
 ;; エラー時になにもしない
 (setq ring-bell-function 'ignore)
@@ -52,3 +55,10 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 (setq uniquify-ignore-buffers-re "*[~*]+")
+
+;; ウィンドウの分割時の移動設定
+(setq qindmove-wrap-around t)
+(global-set-key (kbd "C-M-k") 'windmove-up)
+(global-set-key (kbd "C-M-j") 'windmove-down)
+(global-set-key (kbd "C-M-l") 'windmove-right)
+(global-set-key (kbd "C-M-h") 'windmove-left)
