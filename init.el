@@ -61,7 +61,7 @@
 (setq uniquify-ignore-buffers-re "*[~*]+")
 
 ;; ウィンドウの分割時の移動設定
-(setq qindmove-wrap-around t)
+(setq windmove-wrap-around t)
 (global-set-key (kbd "C-M-k") 'windmove-up)
 (global-set-key (kbd "C-M-j") 'windmove-down)
 (global-set-key (kbd "C-M-l") 'windmove-right)
