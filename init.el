@@ -3,6 +3,7 @@
 ;; ロードパス設定
 (setq load-path(cons (expand-file-name "~/.emacs.d/") load-path))
 (setq load-path(cons (expand-file-name "~/.emacs.d/elisp") load-path))
+(setq load-path(cons (expand-file-name "~/.emacs.d/auto-install") load-path))
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;
