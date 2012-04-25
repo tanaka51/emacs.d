@@ -72,3 +72,8 @@
 (add-to-list 'load-path auto-install-directory)
 (auto-install-compatibility-setup)
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
+
+;; anything
+(require 'anything-startup)
+(require 'anything-migemo)
+(global-set-key (kbd "C-;") 'anything)
