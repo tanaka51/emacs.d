@@ -67,6 +67,10 @@
 (global-set-key (kbd "C-M-l") 'windmove-right)
 (global-set-key (kbd "C-M-h") 'windmove-left)
 
+;; which-func-mode 259
+(which-func-mode 1)
+(setq which-func-mode t)
+
 ;; auto-install
 (require 'auto-install)
 (add-to-list 'load-path auto-install-directory)
