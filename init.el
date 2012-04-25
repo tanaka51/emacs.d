@@ -77,3 +77,8 @@
 (require 'anything-startup)
 (require 'anything-migemo)
 (global-set-key (kbd "C-;") 'anything)
+
+;; recentf-ext.el
+(setq recentf-max-saved-items 500)
+(setq recentf-exclude '("/TAGS$"))
+(require 'recentf-ext)
