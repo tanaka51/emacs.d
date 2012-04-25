@@ -1,5 +1,9 @@
 (setq user-full-name "Koichi Tanaka")
 
+;; ロードパス設定
+(setq load-path(cons (expand-file-name "~/.emacs.d/") load-path))
+(setq load-path(cons (expand-file-name "~/.emacs.d/elisp") load-path))
+
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; 環境毎の設定
@@ -62,3 +66,9 @@
 (global-set-key (kbd "C-M-j") 'windmove-down)
 (global-set-key (kbd "C-M-l") 'windmove-right)
 (global-set-key (kbd "C-M-h") 'windmove-left)
+
+;; auto-install
+(require 'auto-install)
+(add-to-list 'load-path auto-install-directory)
+(auto-install-compatibility-setup)
+(setq ediff-window-setup-function 'ediff-setup-windows-plain)
