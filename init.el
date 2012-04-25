@@ -82,3 +82,9 @@
 (setq recentf-max-saved-items 500)
 (setq recentf-exclude '("/TAGS$"))
 (require 'recentf-ext)
+
+;; redo+ 123
+(require 'redo+)
+(global-set-key (kbd "C-M-/") 'redo)
+(setq undo-limit 600000)
+(setq undo-strong-limit 900000)
