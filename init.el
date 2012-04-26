@@ -121,3 +121,14 @@
 (require 'color-theme)
 (color-theme-initialize)
 (color-theme-simple-1)
+
+
+
+
+
+
+;; TODO: プログラミング用モード設定は分割する方針で
+
+;; Rinari
+(add-to-list 'load-path "~/.emacs.d/rinari")
+(require 'rinari)
