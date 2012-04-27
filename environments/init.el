@@ -4,15 +4,15 @@
 
 (cond ((string-match "apple-darwin" system-configuration) ;; Mac
        (setq os-type 'mac)
-       (load "~/.emacs.d/environments/os/mac.el"))
+       (load (expand-file-name "~/.emacs.d/environments/os/mac.el")))
       ((string-match "linux" system-configuration)        ;; Linux
        (setq os-type 'linux)
-       (load "~/.emacs.d/environments/os/linux.el"))
+       (load (expand-file-name "~/.emacs.d/environments/os/linux.el")))
       ;; ((string-match "freebsd" system-configuration)      ;; FreeBSD
       ;;  (setq os-type 'bsd))
       ((string-match "mingw" system-configuration)        ;; Windows
        (setq os-type 'win)
-       (load "~/.emacs.d/environments/os/win.el")))
+       (load (expand-file-name "~/.emacs.d/environments/os/win.el"))))
 
 (defun mac? ()
   (eq os-type 'mac))
