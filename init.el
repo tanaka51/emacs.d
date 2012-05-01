@@ -128,6 +128,9 @@
 ;; egg for git interface
 (require 'egg)
 
+;; delete-selection-mode
+;; 選択範囲を消すモード
+(delete-selection-mode t)
 
 
 ;; TODO: プログラミング用モード設定は分割する方針で
