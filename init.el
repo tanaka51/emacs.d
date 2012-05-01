@@ -133,6 +133,13 @@
 
 ;; egg for git interface
 (require 'egg)
+(push '(egg-status-buffer-mode :position bottom :height 34) popwin:special-display-config)
+(push '(egg-log-buffer-mode :position bottom :height 34) popwin:special-display-config)
+(push '(egg-file-log-buffer-mode :position bottom :height 34) popwin:special-display-config)
+(push '(egg-reflog-buffer-mode :position bottom :height 34) popwin:special-display-config)
+(push '(egg-diff-buffer-mode :position bottom :height 34) popwin:special-display-config)
+(push '(egg-commit-buffer-mode :position bottom :height 34) popwin:special-display-config)
+(push '("*vc-change-log*" :position bottom :height 34) popwin:special-display-config)
 
 
 
