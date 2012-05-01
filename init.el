@@ -72,6 +72,12 @@
 (which-func-mode 1)
 (setq which-func-mode t)
 
+;; delete-selection-mode
+;; 選択範囲を消すモード
+(delete-selection-mode t)
+
+
+
 ;; auto-install
 (require 'auto-install)
 (add-to-list 'load-path auto-install-directory)
@@ -128,9 +134,6 @@
 ;; egg for git interface
 (require 'egg)
 
-;; delete-selection-mode
-;; 選択範囲を消すモード
-(delete-selection-mode t)
 
 
 ;; TODO: プログラミング用モード設定は分割する方針で
