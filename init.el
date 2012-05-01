@@ -125,8 +125,8 @@
 (color-theme-initialize)
 (color-theme-simple-1)
 
-
-
+;; egg for git interface
+(require 'egg)
 
 
 
