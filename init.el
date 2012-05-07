@@ -116,7 +116,7 @@
 ;; direx:direx-modeのバッファをウィンドウ左辺に幅25でポップアップ
 ;; :dedicatedにtを指定することで、direxウィンドウ内でのバッファの切り替えが
 ;; ポップアップ前のウィンドウに移譲される
-(push '(direx:direx-mode :position left :width 40 :dedicated t)
+(push '(direx:direx-mode :position left :width 60 :dedicated t)
       popwin:special-display-config)
 (setq direx:leaf-icon "  "
       direx:open-icon "▾ "
