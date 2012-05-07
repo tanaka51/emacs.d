@@ -12,7 +12,7 @@
 ;; window サイズ設定
 (if window-system
     (progn
-      (set-frame-parameter nil 'alpha 90) ; 透明度
+      (set-frame-parameter nil 'alpha 70) ; 透明度
       (setq line-spacing 0.2) ; 行間
       (setq ns-pop-up-frames nil)
       (setq initial-frame-alist
