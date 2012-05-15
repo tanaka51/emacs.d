@@ -84,10 +84,15 @@
 (auto-install-compatibility-setup)
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 
+;; popwin
+(require 'popwin)
+(setq display-buffer-function 'popwin:display-buffer)
+
 ;; anything
 (require 'anything-startup)
 (require 'anything-migemo)
 (global-set-key (kbd "C-;") 'anything)
+(global-set-key (kbd "M-i") 'anything-imenu)
 
 ;; recentf-ext.el
 (setq recentf-max-saved-items 500)
@@ -105,10 +110,6 @@
 (setq open-junk-file-format "~/junk/%Y/%m/%d/%H%M%S.")
 (setq open-junk-file-find-file-function 'find-file)
 (global-set-key (kbd "C-x j") 'open-junk-file)
-
-;; popwin
-(require 'popwin)
-(setq display-buffer-function 'popwin:display-buffer)
 
 ;; direx
 (require 'direx)
