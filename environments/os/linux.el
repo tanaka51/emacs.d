@@ -11,6 +11,9 @@
 (set-language-environment 'Japanese)
 (prefer-coding-system 'utf-8)
 
+;; X のクリップボードを使うようにする
+(setq x-select-enable-clipboard t)
+
 ;; 起動時のウィンドウサイズを設定
 (if (boundp 'window-system)
     (progn
