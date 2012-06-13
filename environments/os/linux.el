@@ -17,7 +17,7 @@
 ;; 起動時のウィンドウサイズを設定
 (if (boundp 'window-system)
     (progn
-      (setq line-spacing 0.2) ; 行間
+      (setq line-spacing 0.1) ; 行間
       (setq ns-pop-up-frames nil)
       (setq initial-frame-alist
             (append (list
