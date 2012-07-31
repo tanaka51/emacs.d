@@ -60,3 +60,5 @@
   (interactive)
   (macdict-lookup (word-at-point)))
 (global-set-key (kbd "C-^") 'macdict-lookup-word)
+
+(global-set-key (kbd "C-M-_") 'indent-region)
