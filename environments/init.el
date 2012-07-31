@@ -22,3 +22,15 @@
   (eq os-type 'freebsd))
 (defun win? ()
   (eq os-type 'win))
+
+
+;; environments/languages 以下を再帰的に読み込む
+;; (let ((default-directory "~/.emacs.d/environments/languages/"))
+;;   (setq load-path (cons default-directory load-path))
+;;   (normal-top-level-add-subdirs-to-load-path))
+
+(let ((directory "~/.emacs.d/environments/languages/")
+      (files (list "ruby-and-rails.el"
+                   "gauche.el")))
+  (dolist (file files)
+    (load (concat directory file))))
