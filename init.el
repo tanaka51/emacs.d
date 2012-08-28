@@ -157,6 +157,12 @@
 (add-hook 'rhtml-mode-hook
           '(lambda () (rinari-launch)))
 
+;; ruby-mode
+(autoload 'ruby-mode "ruby-mode" "Major mode for ruby files" t)
+(add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
+(add-to-list 'interpreter-mode-alist '("ruby" . ruby-mode))
+
 ;; ruby-electric
 (require 'ruby-electric)
 (add-hook 'ruby-mode-hook
